@@ -23,10 +23,10 @@ const App = () => {
 
     return(
         <div>
-            <Colorpicker /><br />
-            {/* <Count /> */}
-            <Colorpicker /><br />
-            <Colorpicker /><br />  
+          <h2 style={{textAlign:'center'}}>Swatch Creator</h2>
+            <Colorpicker />
+            <Colorpicker />
+            <Colorpicker /> 
         </div>
 
     )
