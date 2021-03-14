@@ -2,12 +2,20 @@
     border-radius: 100%;
     height: 100px;
     width:100px;
-    /* background-color: aquamarine; */
 }
 
-div.card {
-    float: left;
-    width: 30%;
+
+.swatch-creator-wrapper{
+    display: flex;
+    flex-direction: left;
+    margin: 10px;
+  }
+
+input {
+    text-align: center;
+    margin: 10px;
+}
+.btn {
+    background-color: cadetblue;
     margin: 20px;
-    padding: 10px;
 }

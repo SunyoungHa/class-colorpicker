@@ -1,32 +1,29 @@
-// import React from 'react';
-import Slider from './components/Slider';
-import Colorpicker from './components/Colorpicker';
+
 import './App.css';
 import React, { useState } from 'react';
+import SwatchCreator from './components/SwatchCreator';
+import Swatch from './components/Swatch';
 
-// export default function App() 
-// function Count() {
-//     // Declare a new state variable, which we'll call "count"
-//     const [count, setCount] = useState(0);
-  
-//     return (
-//       <div>
-//         <p>You clicked {count} times</p>
-//         <button onClick={() => setCount(count + 100)}>
-//           Click me
-//         </button>
-//       </div>
-//     );
-//   }
+
 
 const App = () => {
+    const [swatches, setSwatches] = useState([]);
+    const saveSwatch = (newSwatch) => {
+        setSwatches([...swatches, newSwatch])
+    }
 
     return(
-        <div>
+        <div className='App'>
           <h2 style={{textAlign:'center'}}>Swatch Creator</h2>
-            <Colorpicker />
-            <Colorpicker />
-            <Colorpicker /> 
+            <SwatchCreator saveSwatch={saveSwatch} />
+            <div className='swatch-main-wrapper'>
+                <div>{swatches.length}</div>
+                {swatches.map((swatch)=> (
+                    <div>
+                        <Swatch title={swatch.title} colors={swatch.colors} />
+                    </div>
+                ) )}
+            </div>
         </div>
 
     )
