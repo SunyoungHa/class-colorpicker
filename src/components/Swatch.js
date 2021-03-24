@@ -10,8 +10,9 @@ const Swatch = (props) => {
                     <div className='swatchCard'>
                         <div>{props.title}</div>
                         {props.colors.map((color)=> {
-                            return(<div>style={{background: `rgb(${color.r}, ${color.g}, ${color.b})`, height: 100}}</div>
+                            return(<div style={{background: `rgb(${color.r}, ${color.g}, ${color.b})`, height: 100}}></div>
                             )
+                         
                         })}
                     </div>
                 </Card.Body>

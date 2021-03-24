@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 import RgbDisplay from './RgbDisplay';
 
 
-const ColorPicker = ({setColor}) => {
+const ColorPicker1 = ({setColor}) => {
    const [red, updateR] = useState("128");
    const [green, updateG] = useState("128");
    const [blue, updateB] = useState("128");
@@ -40,4 +40,4 @@ const ColorPicker = ({setColor}) => {
 }
 
 
-export default ColorPicker;
+export default ColorPicker1;
