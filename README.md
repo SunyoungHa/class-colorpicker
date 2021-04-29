@@ -1,6 +1,12 @@
+
 # React Color Picker App : Getting Started with React 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
+## Site
+https://condescending-fermat-867dd1.netlify.app/
+
 
 ## Available Scripts
 
